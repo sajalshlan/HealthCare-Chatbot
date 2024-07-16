@@ -41,7 +41,40 @@ Prerequisites:
 - Pip (Python package installer)
 - (Optional) CUDA-capable GPU for faster processing
 
-If you prefer the fast-run way, go for the colab process.
+## Quick Start
+
+If you prefer a faster setup without local installation, you can use Google Colab:
+
+1. Open a new Google Colab notebook.
+2. Connect with the T4 GPU runtime.
+3. Upload the `script.py` file and any documents you want to analyze to the Colab environment.
+4. Run the following command to install dependencies:
+
+   ```
+   !pip install -qU \
+   transformers \
+   sentence-transformers==2.2.2 \
+   datasets==2.14.0 \
+   accelerate==0.21.0 \
+   einops==0.6.1 \
+   langchain \
+   bitsandbytes>=0.41.3 \
+   faiss-cpu==1.7.4 \
+   langchain-community \
+   python-doctr[torch] \
+   pdfplumber \
+   tf2onnx
+   ```
+
+Google Colab Usage:
+1. After installation, run the script in a code cell:
+
+   ```!python3 script.py "/content/your_document.pdf"```
+   or
+   ```!python3 script.py "https://www.example.com/healthcare-document"```
+
+2. Enter your queries in the output area when prompted.
+
 
 Local Installation:
 1. Clone the repository:
@@ -72,48 +105,6 @@ Local Installation:
 
    ```pip3 install -r requirements.txt```
 
-Google Colab Installation:
-1. Open a new Google Colab notebook.
-2. Upload script.py and any documents you want to analyze to your Colab environment.
-3. Run the following command in a code cell to install dependencies:
-```
-   !pip install -qU \
-   transformers \
-   sentence-transformers==2.2.2 \
-   datasets==2.14.0 \
-   accelerate==0.21.0 \
-   einops==0.6.1 \
-   langchain \
-   bitsandbytes>=0.41.3 \
-   faiss-cpu==1.7.4 \
-   langchain-community \
-   python-doctr[torch] \
-   pdfplumber \
-   tf2onnx
-```
-Usage
------
-Local Usage:
-1. Activate your virtual environment if not already active:
-
-   ```source healthcare_env/bin/activate  # On Windows, use "`healthcare_env\Scripts\activate`"```
-
-2. Run the script with your document or URL:
-
-  ```python3 script.py path/to/your/document.pdf```
-   or
-   ```python3 script.py https://www.example.com/healthcare-document```
-
-3. Once the document is processed, you can enter queries at the prompt.
-
-Google Colab Usage:
-1. After installation, run the script in a code cell:
-
-   ```!python3 script.py "/content/your_document.pdf"```
-   or
-   ```!python3 script.py "https://www.example.com/healthcare-document"```
-
-2. Enter your queries in the output area when prompted.
 
 Example Queries
 ---------------
