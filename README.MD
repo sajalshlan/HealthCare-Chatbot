@@ -52,7 +52,7 @@ Local Installation:
 2. Create and activate a virtual environment:
 
    ```python3 -m venv healthcare_env```
-   ```source healthcare_env/bin/activate  # On Windows, use `healthcare_env\Scripts\activate````
+   ```source healthcare_env/bin/activate  # On Windows, use "`healthcare_env\Scripts\activate`"```
 
 3. Install PyTorch (visit https://pytorch.org/ for the command specific to your system):
 
@@ -95,7 +95,7 @@ Usage
 Local Usage:
 1. Activate your virtual environment if not already active:
 
-   ```source healthcare_env/bin/activate  # On Windows, use `healthcare_env\Scripts\activate````
+   ```source healthcare_env/bin/activate  # On Windows, use "`healthcare_env\Scripts\activate`"```
 
 2. Run the script with your document or URL:
 
