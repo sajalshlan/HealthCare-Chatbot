@@ -46,7 +46,8 @@ If you prefer the fast-run way, go for the colab process.
 Local Installation:
 1. Clone the repository:
 
-   ```git clone https://github.com/your-username/healthcare-informatory-ai-chatbot.git```
+   ```git clone https://github.com/sajalshlan/healthcare-informatory-ai-chatbot.git```
+
    ```cd healthcare-informatory-ai-chatbot```
 
 2. Create and activate a virtual environment:
