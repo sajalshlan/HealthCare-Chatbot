@@ -45,14 +45,17 @@ If you prefer the fast-run way, go for the colab process.
 
 Local Installation:
 1. Clone the repository:
+
    git clone https://github.com/your-username/healthcare-informatory-ai-chatbot.git
    cd healthcare-informatory-ai-chatbot
 
 2. Create and activate a virtual environment:
+
    python3 -m venv healthcare_env
    source healthcare_env/bin/activate  # On Windows, use `healthcare_env\Scripts\activate`
 
 3. Install PyTorch (visit https://pytorch.org/ for the command specific to your system):
+
    pip3 install torch torchvision torchaudio
 
 4. Install Swig (required for some dependencies):
@@ -61,15 +64,18 @@ Local Installation:
    - On Windows: Download from http://www.swig.org/download.html and add to PATH
 
 5. Install setuptools:
+
    pip install setuptools
 
 6. Install the required packages:
+
    pip3 install -r requirements.txt
 
 Google Colab Installation:
 1. Open a new Google Colab notebook.
 2. Upload script.py and any documents you want to analyze to your Colab environment.
 3. Run the following command in a code cell to install dependencies:
+
    !pip install -qU \
    transformers \
    sentence-transformers==2.2.2 \
@@ -88,9 +94,11 @@ Usage
 -----
 Local Usage:
 1. Activate your virtual environment if not already active:
+
    source healthcare_env/bin/activate  # On Windows, use `healthcare_env\Scripts\activate`
 
 2. Run the script with your document or URL:
+
    python3 script.py path/to/your/document.pdf
    or
    python3 script.py https://www.example.com/healthcare-document
@@ -99,6 +107,7 @@ Local Usage:
 
 Google Colab Usage:
 1. After installation, run the script in a code cell:
+
    !python3 script.py "/content/your_document.pdf"
    or
    !python3 script.py "https://www.example.com/healthcare-document"
