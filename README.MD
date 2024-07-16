@@ -76,7 +76,7 @@ Google Colab Usage:
 2. Enter your queries in the output area when prompted.
 
 
-Local Installation:
+## Local Installation:
 1. Clone the repository:
 
    ```git clone https://github.com/sajalshlan/healthcare-informatory-ai-chatbot.git```
