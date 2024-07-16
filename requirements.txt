@@ -1,0 +1,12 @@
+transformers
+sentence-transformers==2.2.2
+datasets==2.14.0
+accelerate==0.21.0
+einops==0.6.1
+langchain
+bitsandbytes>=0.41.3
+pdfplumber
+python-doctr
+langchain-community
+faiss-cpu
+tf2onnx
