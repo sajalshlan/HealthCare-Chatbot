@@ -21,7 +21,7 @@ warnings.filterwarnings("ignore")
 # Constants
 EMBED_MODEL_ID = 'sentence-transformers/all-MiniLM-L6-v2'
 LLM_MODEL_ID = "mistralai/Mistral-7B-Instruct-v0.3"
-HF_AUTH_TOKEN = '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'
+HF_AUTH_TOKEN = ''
 
 def setup_device() -> str:
     return f'cuda:{torch.cuda.current_device()}' if torch.cuda.is_available() else 'cpu'
